@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #3E2723; /* Dark Coffee Color */
+    color: #F5DEB3; /* Warm Beige */
+    margin: 0;
+    padding: 0;
+}
+
+/* Landing Page Container */
+.container {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* Header Styles */
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #D2B48C; /* Light Brown */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Subtitle */
+p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;
+    color: #E6C7A1;
+}
+
+/* Call to Action Button */
+.button {
+    background-color: #8B5A2B; /* Coffee Brown */
+    color: #FFF8DC;
+    padding: 12px 24px;
+    font-size: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #5D4037;
+}
+
+/* Background Image */
+.hero {
+    background-image: url('https://source.unsplash.com/1600x900/?coffee,books');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Overlay for readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+}
+
+/* Content inside Hero */
+.hero-content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #2C1E1B;
+    color: #BCAAA4;
+}
